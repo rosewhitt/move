@@ -1,1 +1,1 @@
-println("Welcome!");
+alert("hello BITCH ASS");
