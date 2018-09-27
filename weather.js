@@ -1,1 +1,1 @@
-alert("hello BITCH ASS");
+alert("hello");
