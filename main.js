@@ -1,10 +1,19 @@
 var myQuestions = [
 	{
-		question: "What is 10/2?",
+		question: "What is the weather (in degreees)?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
+			'100+',
+			'90-100',
+			'80-90',
+			'70-80',
+			'60-70',
+			'50-60',
+			'40-50',
+			'30-40',
+			'20-30',
+			'10-20',
+			'0-10'
+			
 		},
 		correctAnswer: 'b'
 	},
