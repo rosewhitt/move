@@ -5,11 +5,11 @@
 <p>Click the button to display a dialog box which will ask you what type of workout you want to do.</p>
 <p>Pick from this list of types of workouts:</p>
 <p> 
-    Outdoor-Cardio-Run-Sprint-Easy
+    Cardio-Run-Sprint-Easy
     <br>
-    Outdoor-Cardio-Run-Sprint-Medium
+    Cardio-Run-Sprint-Medium
     <br>
-    Outdoor-Cardio-Run-Sprint-Hard
+    Cardio-Run-Sprint-Hard
 </p>
 
 <button onclick="myFunction()">Try it</button>
@@ -21,14 +21,23 @@ function myFunction() {
     var text;
     var workout = prompt("What kind of workout do you want to do (choose from list)?");
         switch(workout) {
-            case "Outdoor-Cardio-Run-Sprint-Easy":
+            case "Cardio-Run-Sprint-Easy":
                 text = "8 minute easy warm up jog, 5 minute stretch, 6 x 20-second sprints at max effort with 30-45-second recovery jogs in between each, 8 minute easy cool down jog";
                 break;
-            case "Outdoor-Cardio-Run-Sprint-Medium":
+            case "Cardio-Run-Sprint-Medium":
                 text = "10 minute easy warm up jog, 5 minute stretch, Run 10 x 200 meters with 2 minutes rest in between each interval, 10 minute easy cool down jog";
                 break;
-            case "Outdoor-Cardio-Run-Sprint-Hard":
+            case "Cardio-Run-Sprint-Hard":
                 text = "10 minute warm up jog- start easy, end at comfortably fast, 8 minute stretch, Ladder (go up ladder, 2 minute break, climb back down the ladder): Four 50 meter sprints (20 second recovery),  three 100 meter sprints (30 second recovery), two 200 meter sprints (40 second recovery), one 400 meter sprint (50 second recovery), 10 minute cool down jog";
+                break;
+            case "Cardio-Run-Distance-Easy":
+                text = "Run two miles at easy pace";
+                break;
+            case "Cardio-Run-Distance-Medium":
+                text = "Run three miles at just above talking pace (not able to carry on a full conversation, but able to say a few sentences every now and then)";
+                break;
+            case "Cardio-Run-Distance-Hard":
+                text = "Run 4 miles race pace";
                 break;
             default:
                 text = "try again.";
