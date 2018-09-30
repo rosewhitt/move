@@ -12,12 +12,15 @@
 function myFunction() {
     var text;
     var favDrink = prompt("What kind of workout do you want to do (Indoor or Outdoor)?");
-        if (favDrink == "Indoor") {
-            text = "cool";
-            break;
-        } else if (favDrink == "Outdoor") {
-            text = "nice";
-            break;
+        switch(favDrink) {
+            case "Outdoor":
+                text = "Excellent choice.";
+                break;
+            case "Indoor":
+                text = "cool.";
+                break;
+            default:
+                text = "try again.";
         }
     document.getElementById("demo").innerHTML = text;
 }
