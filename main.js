@@ -1,7 +1,9 @@
-document.getElementById("quiz").innerHTML =
-		var temp = 80;
-		var questionOne = readInt("What is the temperature?");
-		if (questionOne == temp) {
-			good;
-		}
-	;
+var ages = [3, 10, 18, 20];
+
+function checkAdult(age) {
+    return age >= 18;
+}
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = ages.find(checkAdult);
+}
