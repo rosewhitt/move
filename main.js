@@ -1,7 +1,7 @@
-var ages = [3, 10, 18, 20];
+var ages = [4, 12, 16, 20];
 
 function checkAdult(age) {
-    return age >= 18;
+    return age >= document.getElementById("ageToCheck").value;
 }
 
 function myFunction() {
