@@ -11,17 +11,14 @@
 <script>
 function myFunction() {
     var text;
-    var favDrink = prompt("What kind of workout do you want to do?");
-    switch(favDrink) {
-        case "Outdoor":
-        text = "Excellent choice. Martini is good for your soul.";
-        break;
-    case "Indoor":
-        text = "Daiquiri is my favorite too!";
-        break;
-        default:
-        text = "I have never heard of that one..";
-    }
+    var favDrink = prompt("What kind of workout do you want to do (Indoor or Outdoor)?");
+        if (favDrink == "Indoor") {
+            text = "cool";
+            break;
+        } else if (favDrink == "Outdoor") {
+            text = "nice";
+            break;
+        }
     document.getElementById("demo").innerHTML = text;
 }
 </script>
