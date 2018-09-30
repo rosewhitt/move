@@ -2,7 +2,13 @@
 <html>
 <body>
 
-<p>Click the button to display a dialog box which will ask for your workout.</p>
+<p>Click the button to display a dialog box which will ask you what type of workout you want to do.</p>
+<p>Pick from this list of types of workouts:</p>
+<p> 
+    Outdoor-Cardio-Run-Sprint-Easy
+    Outdoor-Cardio-Run-Sprint-Medium
+    Outdoor-Cardio-Run-Sprint-Hard
+</p>
 
 <button onclick="myFunction()">Try it</button>
 
@@ -11,25 +17,15 @@
 <script>
 function myFunction() {
     var text;
-    var favDrink = prompt("What kind of workout do you want to do (Indoor or Outdoor)?");
-        switch(favDrink) {
-            case "Outdoor":
-                text = "Excellent choice.";
-                var outdoor = prompt("Easy, Medium, or Hard?")
-                    switch (outdoor) {
-                        case "Easy" :
-                            text = "run one mile";
-                            break;
-                        case "Medium" :
-                            text = "run two miles";
-                            break;
-                        case "Hard" :
-                            text = "run three miles";
-                            break;
-                        default:
-                            text = "try again.";
-                    }
-            case "Indoor":
+    var workout = prompt("What kind of workout do you want to do (choose from list)?");
+        switch(workout) {
+            case "Outdoor-Cardio-Run-Sprint-Easy":
+                text = "8 minute easy warm up jog, 5 minute stretch, 6 x 20-second sprints at max effort with 30-45-second recovery jogs in between each, 8 minute easy cool down jog";
+                break;
+            case "Outdoor-Cardio-Run-Sprint-Medium":
+                text = "cool.";
+                break;
+            case "Outdoor-Cardio-Run-Sprint-Hard":
                 text = "cool.";
                 break;
             default:
