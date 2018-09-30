@@ -15,7 +15,20 @@ function myFunction() {
         switch(favDrink) {
             case "Outdoor":
                 text = "Excellent choice.";
-                break;
+                var outdoor = prompt("Easy, Medium, or Hard?")
+                    switch (outdoor) {
+                        case "Easy" :
+                            text = "run one mile";
+                            break;
+                        case "Medium" :
+                            text = "run two miles";
+                            break;
+                        case "Hard" :
+                            text = "run three miles";
+                            break;
+                        default:
+                            text = "try again.";
+                    }
             case "Indoor":
                 text = "cool.";
                 break;
