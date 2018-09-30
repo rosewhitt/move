@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>rose</title>
-
-   </head>
    <body>
-      <p>Minimum age: <input type="number" id="ageToCheck" value="18"></p>
-      
-      <button onclick="myFunction()">Try it</button>
 
-      <p>Any ages above: <span id="demo"></span></p>
-      
-      <script src="main.js"></script>
+      <p>Click the button below to decide what workout to try!</p>
+
+      <button onclick="quiz()">Try it</button>
+
+      <p id="demo"></p>
+
+      <script>
+      function quiz() {
+          var text;
+          var indoorOudoor = prompt("Do you want to workout indoors or outdoors?");
+          switch(indoorOutdoor) {
+              case "indoors":
+                  var indoors = prompt("Cardio or No?");
+                  switch(indoors) {
+                     case "Cardio" :
+                        text = "run two miles";
+                        break;
+                     case "No" :
+                        text = "do 10 pushups";
+                        break;
+                  }
+              case "outdoors":
+              text = "Excellent choice. Martini is good for your soul.";
+              break;
+          }
+          document.getElementById("demo").innerHTML = text;
+      }
+      </script>
+
    </body>
 </html>
